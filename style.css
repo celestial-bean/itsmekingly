@@ -1,0 +1,27 @@
+.grid-container{
+    display:grid;
+    grid-template-columns:20% 60% 20%;
+    grid-template-rows: minmax(auto, 20%) 20cm 2cm;
+    border-style:solid;
+    border-color:green;
+  }
+  .grid-item{
+    border-style:solid;
+    border-color:green;
+    overflow: auto;
+  }
+  .footer{
+    grid-column-start:1;
+    grid-column-end:4;
+  }
+  .header{
+    align-content:center;
+    text-align:center;
+    font-size: 140%;
+    grid-column-start:1;
+    grid-column-end:4;
+  }
+  body{
+    background-color:grey;
+
+  }
