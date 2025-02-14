@@ -11,5 +11,12 @@ function loadBody(page) {
                 <li> My <strong style="font-size:28px">favorite </strong>fact!! Not all dinosaurs are birds, but all birds are dinosaurs
             </ul>
     </div>`;
+    break;
+    case "hats":
+      body.innerHTML = `<div style="text-align:center">
+        <img width="80%" src="images/hats.jpg">
+</div>`;
+break;
+
   }
 }
