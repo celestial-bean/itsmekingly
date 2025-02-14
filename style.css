@@ -6,6 +6,9 @@
   font-family: 'starwars';
   src: URL('fonts/starwars.ttf') format('truetype');
 }
+*{
+  font-size: 4vmax;
+}
 body{
   background-color:grey;
 }
@@ -34,6 +37,7 @@ body{
     font-size: 140%;
     grid-column-start:1;
     grid-column-end:4;
+    height:fit-content
   }
   
   .body{
@@ -45,18 +49,19 @@ body{
   }
 
   .menu{
-    
     padding: 5%;
     text-align: center;
   }
+
   .menu>button{
-    font-size: 40px;
     background-color: #e64a1f;
-    border-radius: 7px;
+    border-radius:12vmax;
     width: 95%;
     border-color: white;
-    border-width: 5px;
+    border-width: 1vmax;
     font-family: jurassicPark;
     text-shadow: -1px 1px 2px rgb(237, 245, 73);
   }
-  
+  .title{
+    color:white; background-color: black; text-shadow: -4px 2px 5px yellow;
+  }
