@@ -38,8 +38,8 @@ body{
   
   .body{
     font-size: larger;
-    color:yellow;
-    text-shadow: -1px 1px 2px red;
+    color:white;
+    text-shadow: -1px 1px 2px black;
     font-family: jurassicPark;
     padding:5px;
   }
@@ -50,7 +50,7 @@ body{
     text-align: center;
   }
   .menu>button{
-    font-size: ;
+    font-size: 40px;
     background-color: #e64a1f;
     border-radius: 7px;
     width: 95%;
