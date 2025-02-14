@@ -12,7 +12,7 @@ body{
 .grid-container{
     display:grid;
     grid-template-columns:20% 60% 20%;
-    grid-template-rows: minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 2cm);
+    grid-template-rows: minmax(auto, 20%) minmax(50%, 20cm) minmax(auto, 2cm);
     border-style:solid;
     border-color:green;
     border-width: 2px;
