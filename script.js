@@ -13,3 +13,4 @@ function loadBody(page) {
     </div>`;
   }
 }
+console.log("completed")
