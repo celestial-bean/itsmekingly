@@ -1,27 +1,62 @@
+@font-face {
+  font-family: 'jurassicPark';
+  src: URL('fonts/jurassicPark.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'starwars';
+  src: URL('fonts/starwars.ttf') format('truetype');
+}
+body{
+  background-color:grey;
+}
 .grid-container{
     display:grid;
     grid-template-columns:20% 60% 20%;
     grid-template-rows: minmax(auto, 20%) 20cm 2cm;
     border-style:solid;
     border-color:green;
+    border-width: 2px;
   }
   .grid-item{
     border-style:solid;
     border-color:green;
     overflow: auto;
+    border-width: 2px;
   }
   .footer{
     grid-column-start:1;
     grid-column-end:4;
   }
   .header{
+    font-family: jurassicPark;
     align-content:center;
     text-align:center;
     font-size: 140%;
     grid-column-start:1;
     grid-column-end:4;
   }
-  body{
-    background-color:grey;
-
+  
+  .body{
+    font-size: larger;
+    color:yellow;
+    text-shadow: -1px 1px 2px red;
+    font-family: jurassicPark;
+    padding:5px;
   }
+
+  .menu{
+    
+    padding: 5%;
+    text-align: center;
+  }
+  .menu>button{
+    font-size: ;
+    background-color: #e64a1f;
+    border-radius: 7px;
+    width: 95%;
+    border-color: white;
+    border-width: 5px;
+    font-family: jurassicPark;
+    text-shadow: -1px 1px 2px rgb(237, 245, 73);
+  }
+  
