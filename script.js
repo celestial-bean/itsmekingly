@@ -4,11 +4,11 @@ function loadBody(page) {
     case "dino-facts":
       body.innerHTML = `<div class='dino-facts'>
         <h3>Dino Facts:</h3>
-            <ul style='align-content: center'>
+            <ul >
                 <li>The Parasaurolophus is my favorite dinosaur</li>
                 <li>Triceratops horns are made of toenail</li>
                 <li>Pleasiosaur skin was actually found to be a lot like sea turtles' which are their closest relative</li>
-                <li> My <strong style="font-size:28px">favorite </strong>fact!! Not all dinosaurs are birds, but all birds are dinosaurs
+                <li> My <strong style="font-size:150%">favorite </strong>fact!! Not all dinosaurs are birds, but all birds are dinosaurs
             </ul>
     </div>`;
     break;
@@ -20,3 +20,4 @@ break;
 
   }
 }
+console.log("completed")

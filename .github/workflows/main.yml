@@ -1,0 +1,8 @@
+name: clean-js
+on: push
+jobs:
+  clean-js:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: ls ../

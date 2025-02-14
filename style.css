@@ -6,22 +6,24 @@
   font-family: 'starwars';
   src: URL('fonts/starwars.ttf') format('truetype');
 }
+*{
+  font-size: 4vmax;
+}
 body{
   background-color:grey;
 }
 .grid-container{
     display:grid;
     grid-template-columns:20% 60% 20%;
-    grid-template-rows: minmax(auto, 20%) 20cm 2cm;
+    grid-template-rows: minmax( min-content ,100%) minmax(min-content, 20cm) minmax(2cm,auto);
     border-style:solid;
     border-color:green;
-    border-width: 2px;
+    border-width: .5vmax;
   }
   .grid-item{
     border-style:solid;
     border-color:green;
     overflow: auto;
-    border-width: 2px;
   }
   .footer{
     grid-column-start:1;
@@ -48,14 +50,20 @@ body{
     padding: 5%;
     text-align: center;
   }
+
   .menu>button{
-    font-size: 40px;
     background-color: #e64a1f;
-    border-radius: 7px;
+    border-radius:12vmax;
     width: 95%;
     border-color: white;
-    border-width: 5px;
+    border-width: 1vmax;
     font-family: jurassicPark;
     text-shadow: -1px 1px 2px rgb(237, 245, 73);
   }
-  
+  .title{
+    color:white; background-color: black; text-shadow: -4px 2px 5px yellow;
+  }
+  .dino-facts>*>*{
+    align-content: center;
+    font-size: 100%;
+  }
