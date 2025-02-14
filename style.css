@@ -1,7 +1,7 @@
 .grid-container{
     display:grid;
     grid-template-columns:20% 60% 20%;
-    grid-template-rows: minmax(auto, 20%) 20cm 2cm;
+    grid-template-rows: minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 2cm);
     border-style:solid;
     border-color:green;
   }
