@@ -1,0 +1,8 @@
+name: clean-js
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: tr -d "\n\r" < script.js
