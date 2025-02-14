@@ -15,16 +15,15 @@ body{
 .grid-container{
     display:grid;
     grid-template-columns:20% 60% 20%;
-    grid-template-rows: minmax(auto, 20%) minmax(50%, 20cm) minmax(auto, 2cm);
+    grid-template-rows: minmax( min-content ,100%) minmax(min-content, 20cm) minmax(2cm,auto);
     border-style:solid;
     border-color:green;
-    border-width: 2px;
+    border-width: .5vmax;
   }
   .grid-item{
     border-style:solid;
     border-color:green;
     overflow: auto;
-    border-width: 2px;
   }
   .footer{
     grid-column-start:1;
@@ -37,7 +36,6 @@ body{
     font-size: 140%;
     grid-column-start:1;
     grid-column-end:4;
-    height:fit-content
   }
   
   .body{
@@ -64,4 +62,8 @@ body{
   }
   .title{
     color:white; background-color: black; text-shadow: -4px 2px 5px yellow;
+  }
+  .dino-facts>*>*{
+    align-content: center;
+    font-size: 100%;
   }
