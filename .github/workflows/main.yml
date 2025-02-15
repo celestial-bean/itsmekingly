@@ -4,5 +4,8 @@ jobs:
   clean-js:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Remove newlines from script.js
         run: tr -d "\n\r" < script.js
