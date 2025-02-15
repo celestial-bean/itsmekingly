@@ -21,6 +21,7 @@ body{
     border-width: .5vmax;
   }
   .grid-item{
+    padding: 1vmax;
     border-style:solid;
     border-color:green;
     overflow: auto;
