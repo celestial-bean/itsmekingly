@@ -16,5 +16,6 @@ function loadBody(page) {
 var babyoil=new Audio("audio/babyoil.webm");
 babyoil.volume=.1;
 babyoil.loop=true;
-babyoil.play();
+document.onmousemove=()=>{babyoil.play();}
+
 console.log("completed");
