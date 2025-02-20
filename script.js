@@ -11,6 +11,10 @@ function loadBody(page) {
                 <li> My <strong style="font-size:150%">favorite </strong>fact!! Not all dinosaurs are birds, but all birds are dinosaurs
             </ul>
     </div>`;
+    break;
+    case "hats":
+      body.innerHTML="<img src='images/hats.jpg' width=90%>";
+      break;
   }
 }
 var babyoil=new Audio("audio/babyoil.webm");
