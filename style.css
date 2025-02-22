@@ -61,6 +61,7 @@ body{
     border-width: 1vmax;
     font-family: jurassicPark;
     text-shadow: -1px 1px 2px rgb(237, 245, 73);
+    margin-bottom: .5cm;
   }
   .title{
     font-size: 4vh;
