@@ -15,11 +15,24 @@ function loadBody(page) {
     case "hats":
       body.innerHTML="<img src='images/hats.jpg' width=90%>";
       break;
+      case "singer":
+        singVideo.volume=0.2
+        singVideo.onload=singVideo.play()
+        body.innerHTML="";
+        body.appendChild(singVideo)
+        break;
   }
 }
 var babyoil=new Audio("audio/babyoil.webm");
 babyoil.volume=.1;
 babyoil.loop=true;
-document.onmousemove=()=>{babyoil.play();}
+document.onmousemove=()=>{babyoil.play();document.onmousemove=""}
 
+var singVideo=document.createElement("video");
+singVideo.src="videos/sing.mov";
+singVideo.style.width="90%";
+singVideo.loop=true;
+singVideo.onplay=()=>{babyoil.pause()};
+singVideo.onended=()=>{babyoil.play()};
+singVideo.onpause=()=>{babyoil.play()};
 console.log("completed");
