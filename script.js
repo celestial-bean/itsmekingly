@@ -32,6 +32,7 @@ var singVideo=document.createElement("video");
 singVideo.src="videos/sing.mov";
 singVideo.style.width="90%";
 singVideo.loop=true;
+singVideo.controls=true;
 singVideo.onplay=()=>{babyoil.pause()};
 singVideo.onended=()=>{babyoil.play()};
 singVideo.onpause=()=>{babyoil.play()};
