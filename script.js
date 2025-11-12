@@ -1,5 +1,7 @@
 function loadBody(page) {
   let body = document.querySelector(".body");
+body.classList.remove("show");
+  setTimeout(() => {
   switch (page) {
     case "dino-facts":
       body.innerHTML = `<div class='dino-facts'>
@@ -24,6 +26,7 @@ function loadBody(page) {
     case "discord":
        body.innerHTML="<iframe src='https://discord.com/widget?id=624821823414075392&theme=dark' width='350' height='500' allowtransparency='true' frameborder='0' sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts'></iframe>";
 	break  
+},200)
 }
 }
 var babyoil=new Audio("audio/babyoil.webm");

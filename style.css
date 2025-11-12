@@ -23,6 +23,7 @@
 }
 body{
   background-color:grey;
+animation: fadeIn 0.8s ease-in;
 }
 .grid-container{
     display:grid;
@@ -55,7 +56,11 @@ body{
     text-shadow: -1px 1px 2px black;
     font-family: jurassicPark;
     padding:20px;
-    animation: fadeIn 0.8s ease-in;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.body.show {
+  opacity: 1;
   }
 
   .menu{
