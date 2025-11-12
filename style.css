@@ -55,7 +55,8 @@ body{
     border-radius:12vmax;
     width: 95%;
     border-color: white;
-    border-width: 1vmax;
+    border-width: clamp(2px, 0.4vw, 8px);
+    /*border-width: 1vmax;*/
     font-family: jurassicPark;
     text-shadow: -1px 1px 2px rgb(237, 245, 73);
     margin-bottom: .5cm;
