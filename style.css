@@ -28,6 +28,7 @@ body{
   background-color:grey;
   animation: fadeIn 0.8s ease-in;
 }
+
 .grid-container{
     display:grid;
     grid-template-columns:20% 60% 20%;
@@ -39,7 +40,7 @@ body{
   .grid-item{
     padding: 1vmax;
     border-style:solid;
-    border-color:green;
+    border-color:var(--accent);
     overflow: auto;
   }
 
