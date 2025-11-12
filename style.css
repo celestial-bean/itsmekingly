@@ -29,14 +29,14 @@ body{
   animation: fadeIn 0.8s ease-in;
 }
 
-.grid-container{
-    display:grid;
-    grid-template-columns:20% 60% 20%;
-    grid-template-rows: minmax( min-content ,100%) minmax(min-content, 20cm) minmax(2cm,auto);
-    border-style:solid;
-    border-color:green;
-    border-width: .5vmax;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* scales better across screen sizes */
+  grid-template-rows: auto auto auto; /* auto adjusts to content */
+  border: clamp(2px, 0.4vmax, 8px) solid green; /* responsive border thickness */
+  gap: clamp(6px, 1vmin, 20px); /* nice spacing between grid items */
+  padding: clamp(5px, 2vmin, 15px);
+}
   .grid-item{
     padding: 1vmax;
     border-style:solid;
