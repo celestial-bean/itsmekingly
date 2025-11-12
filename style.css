@@ -11,6 +11,13 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+:root {
+  --primary: #e64a1f;     /* your orange */
+  --accent: #68b684;      /* complementary green */
+  --background: #222;     /* dark gray background */
+  --text: #fdfdfd;        /* off-white text */
+}
+
 *{
   font-size: 2.5vmax;
 }
