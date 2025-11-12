@@ -32,7 +32,7 @@ body {
 /* ✅ Main grid layout */
 .grid-container {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 20% 30% 30% 20%;
   grid-template-rows: auto;
   border: solid var(--accent) clamp(2px, 0.4vmax, 8px);
   gap: clamp(6px, 1vmin, 20px);
@@ -93,8 +93,8 @@ body {
   font-size: 4.5vh;
   width: 85%;
   margin: 2vh auto;
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  background-color: #000000;
   text-shadow: -4px 2px 5px yellow;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 /* ✅ Mobile adjustments */
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
