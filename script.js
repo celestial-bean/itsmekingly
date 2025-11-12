@@ -21,7 +21,10 @@ function loadBody(page) {
         body.innerHTML="";
         body.appendChild(singVideo)
         break;
-  }
+    case "discord":
+       body.innerHTML="<iframe src='https://discord.com/widget?id=624821823414075392&theme=dark' width='350' height='500' allowtransparency='true' frameborder='0' sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts'></iframe>";
+	break  
+}
 }
 var babyoil=new Audio("audio/babyoil.webm");
 babyoil.volume=.1;
