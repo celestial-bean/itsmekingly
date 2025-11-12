@@ -2,10 +2,12 @@
   font-family: 'jurassicPark';
   src: URL('fonts/jurassicPark.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'starwars';
   src: URL('fonts/starwars.ttf') format('truetype');
 }
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -57,9 +59,10 @@ body{
     text-shadow: -1px 1px 2px black;
     font-family: jurassicPark;
     padding:20px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
+
 .body.show {
   opacity: 1;
   }
@@ -77,7 +80,7 @@ body{
     background: var(--primary);
     border-color: var(--accent);
     color: var(--text);
-    border-width: clamp(4px, 0.4vw, 8px);
+    border-width: clamp(5px, 0.4vw, 8px);
     /*border-width: 1vmax;*/
     font-family: jurassicPark;
     text-shadow: -1px 1px 2px rgb(237, 245, 73);
@@ -88,6 +91,7 @@ body{
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   }
+
   .title{
     font-size: 4vh;
     width: 80%;
@@ -95,10 +99,12 @@ body{
     margin: 2vh  auto 2vh auto;
     color:white; background-color: black; text-shadow: -4px 2px 5px yellow;
   }
+
   .dino-facts>*>*{
     align-content: center;
     font-size: 100%;
   }
+
   .footer{
     grid-column-start:1;
     grid-column-end:4;
