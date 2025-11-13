@@ -22,6 +22,7 @@
 
 * {
   font-size: clamp(12px,2.5vmax,24px);
+  box-sizing:border-box;
 }
 
 body {
@@ -59,23 +60,24 @@ body {
   color: #ffffff;
   text-shadow: -1px 1px 2px black;
   font-family: jurassicPark;
-  padding: 20px;
+  padding: 15px;
   opacity: 0;
   transition: opacity 0.4s ease;
+  grid-column:2/4
 }
 .body.show {
   opacity: 1;
 }
 
 .menu {
-  padding: 5%;
+padding:5%;
   text-align: center;
+  grid-column:1/2;
 }
 
 .menu > button {
   background: var(--primary);
   border-radius: 12vmax;
-  width: 95%;
   border-color: var(--accent);
   color: var(--text);
   border-width: clamp(4px, 0.5vw, 8px);
@@ -107,28 +109,26 @@ body {
 }
 
 /* ✅ Mobile adjustments */
-@media (max-width: 900px) {
+@media (max-width: 900px){
   .grid-container {
-    grid-template-columns: 1fr;
+    display:grid;
+    grid-template-columns:  1fr;
     grid-template-rows: auto;
     border-width: 1vmax;
   }
 
   .grid-item {
     border-width: 0.7vmax;
+    grid-column:auto;
   }
 
   .header {
     font-size: clamp(1rem, 5vw, 2rem);
   }
-
   .menu > button {
-    width: 80%;
+    width: 95%;
     font-size: clamp(1rem, 4vw, 2rem);
     border-width: 0.8vmax;
   }
-
-  body {
-    padding-bottom: 10vh;
-  }
 }
+*/
