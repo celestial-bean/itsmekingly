@@ -90,6 +90,12 @@ padding:5%;
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
+.dino-facts li{
+   font-size:clamp(1rem,1.5rem,3rem);
+}
+.dino-facts h3{
+   font-size:clamp(1.5rem,2rem,3.5rem)
+}
 
 .title {
   font-size: 4.5vh;
@@ -117,6 +123,7 @@ font-size:.4em
     grid-template-rows: auto;
     border-width: 1vmax;
   }
+  
 
   .grid-item {
     border-width: 0.7vmax;
@@ -128,8 +135,10 @@ font-size:.4em
   }
   .menu > button {
     width: clamp(20vw, 50%, 55vw);
-    font-size: clamp(2rem, 3.5vw, 6rem);
+    font-size: clamp(1.5rem, 3vw, 6rem);
     border-width: 0.8vmax;
   }
+
 }
 */
+

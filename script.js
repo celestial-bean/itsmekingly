@@ -5,7 +5,7 @@ body.classList.remove("show");
   switch (page) {
     case "dino-facts":
       body.innerHTML = `<div class='dino-facts'>
-        <h3>Dino Facts:</h3>
+        <h3 style="font-size:150%" >Dino Facts:</h3>
             <ul >
                 <li>The Parasaurolophus is my favorite dinosaur</li>
                 <li>Triceratops horns are made of toenail</li>
@@ -24,9 +24,9 @@ body.classList.remove("show");
         body.appendChild(singVideo)
         break;
     case "discord":
-       body.innerHTML="<iframe src='https://discord.com/widget?id=624821823414075392&theme=dark' width='350' height='500' allowtransparency='true' frameborder='0' sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts'></iframe>";
-	break  
-	}
+     body.innerHTML = `<div style="overflow:hidden; display:flex; justify-content:center; align-items:center;"><iframe>  src="https://discord.com/widget?id=624821823414075392&theme=dark" style="width:90%; height:90%; border:none; display:block;"allowtransparency="true"frameborder="0"sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>`;
+	break 
+}
 body.classList.add("show");
 },200)
 }
