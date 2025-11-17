@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: Get latest commit message
         id: commit
-        run: echo "message=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
+        run: 'echo "message=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT'
 
       - name: Print commit message (debug)
-        run: echo "Commit Message: ${{ steps.commit.outputs.message }}"
+        run: 'echo "Commit Message: ${{ steps.commit.outputs.message }}"'
 
       # ❗ Set your Discord webhook in repo settings → Secrets → DISCORD_WEBHOOK
       - name: Send Discord notification if commit matches
