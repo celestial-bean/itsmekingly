@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - name: Get latest commit message
         id: commit
         run: 'echo "message=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT'
