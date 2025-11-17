@@ -1,0 +1,27 @@
+name: Commit Message Checker
+
+on:
+  push:
+    branches:
+      - "**"   # all branches
+
+jobs:
+  check-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get latest commit message
+        id: commit
+        run: echo "message=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
+
+      - name: Print commit message (debug)
+        run: echo "Commit Message: ${{ steps.commit.outputs.message }}"
+
+      # ❗ Set your Discord webhook in repo settings → Secrets → DISCORD_WEBHOOK
+      - name: Send Discord notification if commit matches
+        if: contains(steps.commit.outputs.message, 'final')
+        run: |
+          payload=$(jq -n --arg content "🚀 https://itsmekingly.xyz updated: ${{ steps.commit.outputs.message }}" '{content: $content}')
+          curl -H "Content-Type: application/json" \
+               -d "$payload" \
+               "${{ secrets.DISCORD_WEBHOOK }}"
