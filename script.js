@@ -24,7 +24,7 @@ body.classList.remove("show");
         body.appendChild(singVideo)
         break;
     case "discord":
-     body.innerHTML = `<div style="overflow:hidden; display:flex; justify-content:center; align-items:center;"><iframe>  src="https://discord.com/widget?id=624821823414075392&theme=dark" style="width:90%; height:90%; border:none; display:block;"allowtransparency="true"frameborder="0"sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>`;
+     body.innerHTML = '<div style="overflow:hidden; width:100% height:100% display:inline-block; justify-content:center; align-items:center;"><iframe src="https://discord.com/widget?id=624821823414075392&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>';
 	break 
     case "pookie":
 	    body.innerHTML="<img src='images/pookie.jpg' width='90%'  height='auto'>";

@@ -76,6 +76,7 @@ padding:5%;
 }
 
 .menu > button {
+  width:90%;
   background: var(--primary);
   border-radius: 12vmax;
   border-color: var(--accent);
